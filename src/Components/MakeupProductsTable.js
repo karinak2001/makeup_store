@@ -6,11 +6,15 @@ function MakeupProductsTable (props) {
 
     const [currentProducts, setCurrentProducts] = useState(props.items);
 
-    // Filter function
+    // FilterPriceHandler
+
+    // addProductToCardHandler
+
+    // resetProductsTableHandler
 
     return (
         <div>
-            // Form
+            // FilterSection
 
             <div className="makeup-products-table">
                 {currentProducts.map((productData, index) => (

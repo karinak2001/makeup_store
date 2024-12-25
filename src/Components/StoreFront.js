@@ -10,7 +10,7 @@ function StoreFront() {
 
     const checkImageExists = async (url) => {
         try {
-            const response = await fetch(url, { method: 'HEAD' });
+            const response = await fetch(url, {method: 'HEAD'});
             return response.ok;
         } catch (error) {
             return false;
@@ -54,15 +54,26 @@ function StoreFront() {
         fetchMakeupProducts();
     }, []);
 
-    if (loading) return <p>Loading products...</p>;
-
     return (
         <div>
-            <button onClick={() => navigate('/new')}>Go To Shopping Cart</button>
-            <br/>
-            <br/>
-            <MakeupProductsTable items={makeupProducts} />
+            {
+                loading
+                    ?
+                    <div className="d-flex justify-content-center">
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    :
+                    <div>
+                        <button onClick={() => navigate('/new')}>Go To Shopping Cart</button>
+                        <br/>
+                        <br/>
+                        <MakeupProductsTable items={makeupProducts}/>
+                    </div>
+            }
         </div>
     );
 }
+
 export default StoreFront;
