@@ -1,0 +1,25 @@
+.product-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-price {
+    font-family: "Trirong", serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.brand {
+    font-family: "Trirong", serif;
+    font-size: 17px;
+}
+
+.image {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+}
