@@ -5,12 +5,12 @@
     align-items: center;
 }
 
-.name-price, .brand {
+.name, .price, .brand {
     font-family: "Trirong", serif;
     font-size: 17px;
 }
 
-.name-price {
+.name, .price {
     font-weight: bold;
     text-align: center;
 }

@@ -1,6 +1,7 @@
-import { useNavigation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MakeupProductsTable from "./MakeupProductsTable";
+import '../Style/StoreFront.css'
 
 function StoreFront() {
 
@@ -66,6 +67,7 @@ function StoreFront() {
                     </div>
                     :
                     <div>
+                        <div className="title">GlowUp</div>
                         <button onClick={() => navigate('/new')}>Go To Shopping Cart</button>
                         <br/>
                         <br/>
