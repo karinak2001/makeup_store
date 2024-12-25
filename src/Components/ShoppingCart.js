@@ -32,7 +32,7 @@ const ShoppingCart = () => {
 
     return (
         <div>
-            <h1>Shopping Bag</h1>
+            <h1>Shopping Cart</h1>
             <div>
                 <h2>items:</h2>
                 <pre>{JSON.stringify(dataArray, null, 2)}</pre>
