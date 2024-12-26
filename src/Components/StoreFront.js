@@ -35,6 +35,7 @@ function StoreFront() {
                             brand: makeupProduct.brand,
                             name: makeupProduct.name,
                             price: makeupProduct.price,
+                            price_sign: '$',
                             image_link: makeupProduct.image_link,
                             product_type: makeupProduct.product_type,
                             product_colors: makeupProduct.product_colors

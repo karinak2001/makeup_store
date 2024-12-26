@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ref, get } from 'firebase/database';
 import database from './FirebaseDB';
+import '../Style/ShoppingCart.css'
 
 const ShoppingCart = () => {
     const [dataArray, setDataArray] = useState([]);
+
+    // countSubTotal - function
 
     const fetchDataFromFirebase = async () => {
         try {
@@ -32,9 +35,8 @@ const ShoppingCart = () => {
 
     return (
         <div>
-            <h1>Shopping Cart</h1>
+            <h1>Shopping Cart({dataArray.length})</h1>
             <div>
-                <h2>items:</h2>
                 <pre>{JSON.stringify(dataArray, null, 2)}</pre>
             </div>
         </div>

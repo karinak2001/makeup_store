@@ -12,7 +12,7 @@ function MakeupProductsTable(props) {
             <img className="image" src={props.image_link} onClick={handleImageClick} alt={props.name}/>
             <div className="name">{props.name}</div>
             <div className="brand">{props.brand}</div>
-            <div className="price">${props.price}</div>
+            <div className="price">{props.price_sign}{props.price}</div>
         </div>
     )
 }

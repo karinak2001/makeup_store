@@ -10,6 +10,9 @@ function MakeupProductsTable (props) {
     // FilterPriceHandler
 
 
+    // randomColor
+
+
     // addProductToCartHandler
     const addProductToCartHandler = (productName) => {
         console.log(productName)
@@ -30,8 +33,8 @@ function MakeupProductsTable (props) {
                         brand={productData.brand}
                         name={productData.name}
                         price={productData.price}
+                        price_sign={productData.price_sign}
                         image_link={productData.image_link}
-                        product_type={productData.product_type}
                         onAddProductToCart={addProductToCartHandler}
                     />
                 ))}
