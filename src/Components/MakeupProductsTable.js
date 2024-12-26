@@ -9,7 +9,12 @@ function MakeupProductsTable (props) {
 
     // FilterPriceHandler
 
-    // addProductToCardHandler
+
+    // addProductToCartHandler
+    const addProductToCartHandler = (productName) => {
+        console.log(productName)
+    }
+
 
     // resetProductsTableHandler
 
@@ -27,7 +32,7 @@ function MakeupProductsTable (props) {
                         price={productData.price}
                         image_link={productData.image_link}
                         product_type={productData.product_type}
-                        tag_list={productData.tag_list}
+                        onAddProductToCart={addProductToCartHandler}
                     />
                 ))}
             </div>

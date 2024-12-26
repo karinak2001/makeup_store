@@ -37,7 +37,7 @@ function StoreFront() {
                             price: makeupProduct.price,
                             image_link: makeupProduct.image_link,
                             product_type: makeupProduct.product_type,
-                            tag_list: makeupProduct.tag_list
+                            product_colors: makeupProduct.product_colors
                         };
                     }
                     return null;
