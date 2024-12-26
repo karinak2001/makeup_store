@@ -73,5 +73,4 @@ function FilterSection (props) {
         </div>
     )
 }
-
 export default FilterSection;

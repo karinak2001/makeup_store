@@ -77,5 +77,4 @@ function StoreFront() {
         </div>
     );
 }
-
 export default StoreFront;

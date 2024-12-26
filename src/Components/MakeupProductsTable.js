@@ -34,5 +34,4 @@ function MakeupProductsTable (props) {
         </div>
     )
 }
-
 export default MakeupProductsTable;
