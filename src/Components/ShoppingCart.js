@@ -34,10 +34,23 @@ const ShoppingCart = () => {
     }, []); // [] מבטיח שהפונקציה תרוץ רק פעם אחת עם טעינת הרכיב
 
     return (
-        <div>
-            <h1>Shopping Cart({dataArray.length})</h1>
-            <div>
-                <pre>{JSON.stringify(dataArray, null, 2)}</pre>
+        <div className="container-cart">
+            <div className="title-cart">Shopping Cart({dataArray.length})</div>
+            <div className="container1-cart">
+                {dataArray.map((item, index) => (
+                    <div className="products-container">
+                        <div className="container2-cart">
+                            <img className="image-cart" src={item.image_link} alt={item.name}/>
+                        </div>
+                        <div className="container3-cart">
+                            <div className="name-cart">{item.name}</div>
+                            <div className="brand-cart">{item.brand}</div>
+                            <div className="color-cart">Color: {item.product_color}</div>
+                            <div className="price-cart">{item.price_sign}{item.price}</div>
+                        </div>
+                    </div>
+                ))}
+                {/*<pre>{JSON.stringify(dataArray, null, 2)}</pre>*/}
             </div>
         </div>
     );

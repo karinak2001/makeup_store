@@ -6,7 +6,6 @@ function MakeupProductsTable(props) {
         props.onAddProductToCart(props.name)
     }
 
-
     return (
         <div className="product-items">
             <img className="image" src={props.image_link} onClick={handleImageClick} alt={props.name}/>

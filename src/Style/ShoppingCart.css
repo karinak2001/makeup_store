@@ -1,0 +1,39 @@
+.container-cart {
+    padding-left: 10px;
+}
+
+.title-cart {
+    text-align: left;
+    font-family: "Trirong", serif;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.products-container {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.container1-cart {
+    padding-top: 20px;
+}
+
+.container3-cart {
+    padding-left: 15px;
+}
+
+.image-cart {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #656262;
+}
+
+.name-cart, .price-cart, .brand-cart, .color-cart {
+    font-family: "Trirong", serif;
+    font-size: 15px;
+}
+
+.name-cart, .price-cart {
+    font-weight: bold;
+}
