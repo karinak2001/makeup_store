@@ -9,16 +9,16 @@
     font-size: 33px;
 }
 
-.products-container {
+.product-container {
     display: flex;
     padding-bottom: 30px;
 }
 
-.container1-cart {
+.container_1-cart {
     padding-top: 20px;
 }
 
-.container3-cart {
+.container_3-cart {
     padding-left: 15px;
 }
 

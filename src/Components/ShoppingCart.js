@@ -36,13 +36,13 @@ const ShoppingCart = () => {
     return (
         <div className="container-cart">
             <div className="title-cart">Shopping Cart({dataArray.length})</div>
-            <div className="container1-cart">
+            <div className="container_1-cart">
                 {dataArray.map((item, index) => (
-                    <div className="products-container">
-                        <div className="container2-cart">
+                    <div className="product-container">
+                        <div className="container_2-cart">
                             <img className="image-cart" src={item.image_link} alt={item.name}/>
                         </div>
-                        <div className="container3-cart">
+                        <div className="container_3-cart">
                             <div className="name-cart">{item.name}</div>
                             <div className="brand-cart">{item.brand}</div>
                             <div className="color-cart">Color: {item.product_color}</div>
