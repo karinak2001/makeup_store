@@ -2,7 +2,7 @@ import '../Style/MakeupProductsItemTable.css'
 
 function MakeupProductsTable(props) {
 
-    const handleImageClick = () => {
+    const handleImageClick = (event) => {
         props.onAddProductToCart(props.name)
     }
 

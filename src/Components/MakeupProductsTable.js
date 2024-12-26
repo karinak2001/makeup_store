@@ -2,6 +2,8 @@ import {useState} from "react";
 import MakeupProductsItemTable from "./MakeupProductsItemTable";
 import '../Style/MakeupProductsTable.css'
 import FilterSection from "./FilterSection";
+import { ref, set } from 'firebase/database';
+import database from './FirebaseDB';
 
 function MakeupProductsTable (props) {
 
@@ -9,13 +11,34 @@ function MakeupProductsTable (props) {
 
     // FilterPriceHandler
 
+    const randomColorFunction = (colors) => {
+        const colorNames = colors.map((color) => color.colour_name);
+        const randomIndex = Math.floor(Math.random() * colorNames.length);
+        return colorNames[randomIndex];
+    }
 
-    // randomColor
-
-
-    // addProductToCartHandler
     const addProductToCartHandler = (productName) => {
-        console.log(productName)
+        const newProductInitial = currentProducts.find((product) => product.name === productName);
+
+        const newProductFinal = {
+            brand: newProductInitial.brand,
+            name: newProductInitial.name,
+            price: newProductInitial.price,
+            price_sign: newProductInitial.price_sign,
+            image_link: newProductInitial.image_link,
+            product_color: randomColorFunction(newProductInitial.product_colors)
+        }
+
+        const uniqueKey = Date.now();
+
+        // שליחת הנתונים
+        set(ref(database, 'objects/' + uniqueKey), newProductFinal)
+            .then(() => {
+                console.log("Data sent successfully!");
+            })
+            .catch((error) => {
+                console.error("Error sending data:", error);
+            });
     }
 
 

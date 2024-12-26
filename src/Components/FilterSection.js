@@ -2,8 +2,6 @@ import '../Style/FilterSection.css'
 
 function FilterSection (props) {
 
-
-
     return (
         <div>
             <div className="container mt-5">
