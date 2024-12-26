@@ -58,10 +58,20 @@ function FilterSection (props) {
                                 </label>
                             </div>
                         </li>
+                        <li>
+                            <div className="form-check">
+                                <input className="form-check-input" type="checkbox" value="option6"
+                                       id="option6"/>
+                                <label className="form-check-label" htmlFor="option6">
+                                    $50+
+                                </label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     )
 }
+
 export default FilterSection;
