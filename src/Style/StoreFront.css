@@ -4,3 +4,9 @@
     font-weight: bold;
     font-size: 50px;
 }
+
+.cart-button {
+    position: absolute;
+    padding: 10px;
+    top: 10px;
+}

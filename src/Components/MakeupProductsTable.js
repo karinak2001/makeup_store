@@ -1,6 +1,7 @@
 import {useState} from "react";
 import MakeupProductsItemTable from "./MakeupProductsItemTable";
 import '../Style/MakeupProductsTable.css'
+import FilterSection from "./FilterSection";
 
 function MakeupProductsTable (props) {
 
@@ -14,8 +15,9 @@ function MakeupProductsTable (props) {
 
     return (
         <div>
-            // FilterSection
-
+            <FilterSection/>
+            <br/>
+            <br/>
             <div className="makeup-products-table">
                 {currentProducts.map((productData, index) => (
                     <MakeupProductsItemTable

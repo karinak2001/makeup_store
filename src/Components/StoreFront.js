@@ -68,10 +68,9 @@ function StoreFront() {
                     :
                     <div>
                         <div className="title">GlowUp</div>
-                        <button type="button" class="btn btn-outline-dark" onClick={() => navigate('/new')}>Go To Shopping Cart</button>
-                        {/*<button onClick={() => navigate('/new')}>Go To Shopping Cart</button>*/}
-                        <br/>
-                        <br/>
+                        <div className="cart-button">
+                            <button type="button" class="btn btn-outline-secondary" onClick={() => navigate('/new')}>Shopping Cart</button>
+                        </div>
                         <MakeupProductsTable items={makeupProducts}/>
                     </div>
             }
