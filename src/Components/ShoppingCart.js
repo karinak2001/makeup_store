@@ -50,7 +50,6 @@ const ShoppingCart = () => {
                         </div>
                     </div>
                 ))}
-                {/*<pre>{JSON.stringify(dataArray, null, 2)}</pre>*/}
             </div>
         </div>
     );
