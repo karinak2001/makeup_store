@@ -22,6 +22,25 @@
     padding-left: 15px;
 }
 
+.subtotal-container {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.checkout-button {
+    position: absolute;
+    padding: 10px;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Trirong", serif;
+}
+
 .image-cart {
     width: 150px;
     height: 150px;

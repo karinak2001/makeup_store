@@ -5,8 +5,9 @@ import '../Style/ShoppingCart.css'
 
 const ShoppingCart = () => {
     const [dataArray, setDataArray] = useState([]);
+    // const subtotal
 
-    // countSubTotal - function
+    // countSubTotalFunction
 
     const fetchDataFromFirebase = async () => {
         try {
@@ -31,6 +32,7 @@ const ShoppingCart = () => {
     // קריאה לנתונים עם הטעינה הראשונית
     useEffect(() => {
         fetchDataFromFirebase();
+
     }, []); // [] מבטיח שהפונקציה תרוץ רק פעם אחת עם טעינת הרכיב
 
     return (
@@ -47,6 +49,11 @@ const ShoppingCart = () => {
                             <div className="brand-cart">{item.brand}</div>
                             <div className="color-cart">Color: {item.product_color}</div>
                             <div className="price-cart">{item.price_sign}{item.price}</div>
+                        </div>
+                        <div className="subtotal-container">
+                            <div className="checkout-button">
+                                <button type="button" className="btn btn-secondary">CHECKOUT</button>
+                            </div>
                         </div>
                     </div>
                 ))}

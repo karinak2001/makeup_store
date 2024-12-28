@@ -1,7 +1,7 @@
 import {useState} from "react";
 import MakeupProductsItemTable from "./MakeupProductsItemTable";
 import '../Style/MakeupProductsTable.css'
-import FilterSection from "./FilterSection";
+import FiltersSection from "./FiltersSection";
 import { ref, set } from 'firebase/database';
 import database from './FirebaseDB';
 
@@ -9,7 +9,9 @@ function MakeupProductsTable (props) {
 
     const [currentProducts, setCurrentProducts] = useState(props.items);
 
-    // FilterPriceHandler
+    const priceFilterHandler = (checkBoxes) => {
+        console.log(checkBoxes)
+    }
 
     const randomColorFunction = (colors) => {
         const colorNames = colors.map((color) => color.colour_name);
@@ -41,12 +43,9 @@ function MakeupProductsTable (props) {
             });
     }
 
-
-    // resetProductsTableHandler
-
     return (
         <div>
-            <FilterSection/>
+            <FiltersSection onPriceFilter={priceFilterHandler}/>
             <br/>
             <br/>
             <div className="makeup-products-table">
