@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import MakeupProductsItemTable from "./MakeupProductsItemTable";
 import '../Style/MakeupProductsTable.css'
 import FiltersSection from "./FiltersSection";
@@ -8,10 +8,49 @@ import database from './FirebaseDB';
 function MakeupProductsTable (props) {
 
     const [currentProducts, setCurrentProducts] = useState(props.items);
+    const [priceCheckBoxes, setPriceCheckBoxes] = useState([]);
+    const [productTypeCheckBoxes, setProductTypeCheckBoxes] = useState([]);
+
 
     const priceFilterHandler = (checkBoxes) => {
-        console.log(checkBoxes)
-    }
+        setPriceCheckBoxes(checkBoxes);
+        updateFilteredProducts(checkBoxes, productTypeCheckBoxes);
+    };
+
+    const productTypeFilterHandler = (checkBoxes) => {
+        setProductTypeCheckBoxes(checkBoxes);
+        updateFilteredProducts(priceCheckBoxes, checkBoxes);
+    };
+
+    const updateFilteredProducts = (priceFilters, typeFilters) => {
+        let filteredProducts = [...props.items];
+
+        if (typeFilters.length !== 0 && typeFilters.length !== 10) {
+            filteredProducts = filteredProducts.filter((product) =>
+                typeFilters.includes(product.product_type)
+            );
+        }
+
+        if (priceFilters.length !== 0 && priceFilters.length !== 6) {
+            const priceFilteredProducts = [];
+            priceFilters.forEach((item) => {
+                const price = parseInt(item);
+                if (price % 10 === 0) {
+                    priceFilteredProducts.push(
+                        ...filteredProducts.filter(
+                            (product) => product.price >= price - 10 && product.price < price
+                        )
+                    );
+                } else {
+                    priceFilteredProducts.push(
+                        ...filteredProducts.filter((product) => product.price >= price - 5)
+                    );
+                }
+            });
+            filteredProducts = priceFilteredProducts;
+        }
+        setCurrentProducts(filteredProducts);
+    };
 
     const randomColorFunction = (colors) => {
         const colorNames = colors.map((color) => color.colour_name);
@@ -45,7 +84,7 @@ function MakeupProductsTable (props) {
 
     return (
         <div>
-            <FiltersSection onPriceFilter={priceFilterHandler}/>
+            <FiltersSection onPriceFilterDone={priceFilterHandler} onProductTypeFilterDone={productTypeFilterHandler}/>
             <br/>
             <br/>
             <div className="makeup-products-table">
