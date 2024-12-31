@@ -88,5 +88,4 @@ function PriceFilter (props) {
         </div>
     )
 }
-
 export default PriceFilter;

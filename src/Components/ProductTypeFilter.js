@@ -126,5 +126,4 @@ function ProductTypeFilter (props) {
         </div>
     )
 }
-
 export default ProductTypeFilter;
