@@ -23,7 +23,7 @@ function MakeupProductsTable (props) {
     };
 
     const updateFilteredProducts = (priceFilters, typeFilters) => {
-        let filteredProducts = [...props.items];
+        let filteredProducts = [...props.items]; // העתקה של props
 
         if (typeFilters.length !== 0 && typeFilters.length !== 10) {
             filteredProducts = filteredProducts.filter((product) =>
@@ -37,7 +37,7 @@ function MakeupProductsTable (props) {
                 const price = parseInt(item);
                 if (price % 10 === 0) {
                     priceFilteredProducts.push(
-                        ...filteredProducts.filter(
+                        ...filteredProducts.filter( //השימוש ב-... מאפשר להוסיף את כל האלמנטים מהמיון ישירות כפריטים בודדים למערך.
                             (product) => product.price >= price - 10 && product.price < price
                         )
                     );
