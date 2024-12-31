@@ -67,7 +67,7 @@ function StoreFront() {
                         </div>
                     </div>
                     :
-                    <div>
+                    <div className="main">
                         <div className="title">GlowUp</div>
                         <div className="cart-button">
                             <button type="button" class="btn btn-outline-secondary" onClick={() => navigate('/new')}>Shopping Cart</button>

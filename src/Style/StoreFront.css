@@ -3,10 +3,17 @@
     font-family: "Trirong", serif;
     font-weight: bold;
     font-size: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 .cart-button {
     position: absolute;
     padding: 10px;
     top: 10px;
+}
+
+.main {
+    display: flex;
 }
