@@ -17,3 +17,7 @@
 .main {
     display: flex;
 }
+
+.large-icon {
+    font-size: 24px;
+}

@@ -11,7 +11,6 @@ function MakeupProductsTable (props) {
     const [priceCheckBoxes, setPriceCheckBoxes] = useState([]);
     const [productTypeCheckBoxes, setProductTypeCheckBoxes] = useState([]);
 
-
     const priceFilterHandler = (checkBoxes) => {
         setPriceCheckBoxes(checkBoxes);
         updateFilteredProducts(checkBoxes, productTypeCheckBoxes);

@@ -32,7 +32,6 @@ const ShoppingCart = () => {
     // קריאה לנתונים עם הטעינה הראשונית
     useEffect(() => {
         fetchDataFromFirebase();
-
     }, []); // [] מבטיח שהפונקציה תרוץ רק פעם אחת עם טעינת הרכיב
 
     return (

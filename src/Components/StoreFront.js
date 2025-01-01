@@ -70,7 +70,8 @@ function StoreFront() {
                     <div className="main">
                         <div className="title">GlowUp</div>
                         <div className="cart-button">
-                            <button type="button" class="btn btn-outline-secondary" onClick={() => navigate('/new')}>Shopping Cart</button>
+                            <button type="button" class="btn btn-outline-secondary" onClick={() => navigate('/new')}>
+                                <i className="bi bi-cart2 large-icon"></i></button>
                         </div>
                         <MakeupProductsTable items={makeupProducts}/>
                     </div>

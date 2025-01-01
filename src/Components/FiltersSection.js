@@ -19,5 +19,4 @@ function FiltersSection (props) {
         </div>
     )
 }
-
 export default FiltersSection;
