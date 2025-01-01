@@ -81,7 +81,7 @@ function PriceFilter (props) {
                                 </label>
                             </div>
                         </li>
-                        <button type="button" className="btn btn-outline-secondary" onClick={doneButtonPriceFilterHandler}>Done</button>
+                        <button type="button" className="btn btn-outline-dark" onClick={doneButtonPriceFilterHandler}>Done</button>
                     </ul>
                 </div>
             </div>
