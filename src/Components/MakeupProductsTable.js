@@ -55,7 +55,7 @@ function MakeupProductsTable (props) {
         const colorNames = colors.map((color) => color.colour_name);
         const randomIndex = Math.floor(Math.random() * colorNames.length);
         return colorNames[randomIndex];
-    }
+    };
 
     const addProductToCartHandler = (productName) => {
         const newProductInitial = currentProducts.find((product) => product.name === productName);
@@ -67,7 +67,7 @@ function MakeupProductsTable (props) {
             price_sign: newProductInitial.price_sign,
             image_link: newProductInitial.image_link,
             product_color: randomColorFunction(newProductInitial.product_colors)
-        }
+        };
 
         const uniqueKey = Date.now();
 
@@ -100,6 +100,6 @@ function MakeupProductsTable (props) {
                 ))}
             </div>
         </div>
-    )
+    );
 }
 export default MakeupProductsTable;

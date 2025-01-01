@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function PriceFilter (props) {
 
-    const [priceFilterCheckboxes, setPriceFilterCheckboxes] = useState([])
+    const [priceFilterCheckboxes, setPriceFilterCheckboxes] = useState([]);
 
     const checkBoxPriceFilterHandler = (event) => {
         if (priceFilterCheckboxes.includes(event.target.value)) {
@@ -12,11 +12,11 @@ function PriceFilter (props) {
         } else {
             setPriceFilterCheckboxes([...priceFilterCheckboxes, event.target.value]);
         }
-    }
+    };
 
     const doneButtonPriceFilterHandler = () => {
         props.onPriceFilter(priceFilterCheckboxes)
-    }
+    };
 
     return (
         <div>
@@ -86,6 +86,6 @@ function PriceFilter (props) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 export default PriceFilter;

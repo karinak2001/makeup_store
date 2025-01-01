@@ -4,7 +4,7 @@ function MakeupProductsTable(props) {
 
     const handleImageClick = (event) => {
         props.onAddProductToCart(props.name)
-    }
+    };
 
     return (
         <div className="product-items">
@@ -13,6 +13,6 @@ function MakeupProductsTable(props) {
             <div className="brand">{props.brand}</div>
             <div className="price">{props.price_sign}{props.price}</div>
         </div>
-    )
+    );
 }
 export default MakeupProductsTable;

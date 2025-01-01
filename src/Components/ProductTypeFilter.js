@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function ProductTypeFilter (props) {
 
-    const [productTypeFilterCheckboxes, setProductTypeFilterCheckboxes] = useState([])
+    const [productTypeFilterCheckboxes, setProductTypeFilterCheckboxes] = useState([]);
 
     const checkBoxProductTypeFilterHandler = (event) => {
         if (productTypeFilterCheckboxes.includes(event.target.value)) {
@@ -12,11 +12,11 @@ function ProductTypeFilter (props) {
         } else {
             setProductTypeFilterCheckboxes([...productTypeFilterCheckboxes, event.target.value]);
         }
-    }
+    };
 
     const doneButtonProductTypeFilterHandler = () => {
         props.onProductTypeFilter(productTypeFilterCheckboxes)
-    }
+    };
 
     return (
         <div>
@@ -124,6 +124,6 @@ function ProductTypeFilter (props) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 export default ProductTypeFilter;
