@@ -37,12 +37,12 @@ function MakeupProductsTable (props) {
                 if (price % 10 === 0) {
                     priceFilteredProducts.push(
                         ...filteredProducts.filter( //השימוש ב-... מאפשר להוסיף את כל האלמנטים מהמיון ישירות כפריטים בודדים למערך.
-                            (product) => product.price >= price - 10 && product.price < price
+                            (product) => parseFloat(product.price) >= price - 10 && parseFloat(product.price) < price
                         )
                     );
                 } else {
                     priceFilteredProducts.push(
-                        ...filteredProducts.filter((product) => product.price >= price - 5)
+                        ...filteredProducts.filter((product) => parseFloat(product.price) >= price - 5)
                     );
                 }
             });
