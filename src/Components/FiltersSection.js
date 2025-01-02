@@ -1,6 +1,6 @@
 import PriceFilter from "./PriceFilter";
 import ProductTypeFilter from "./ProductTypeFilter";
-import '../Style/Filters.css'
+import '../Style/Filters.css';
 
 function FiltersSection (props) {
 

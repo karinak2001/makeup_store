@@ -1,6 +1,6 @@
 import {useState} from "react";
 import MakeupProductsItemTable from "./MakeupProductsItemTable";
-import '../Style/MakeupProductsTable.css'
+import '../Style/MakeupProductsTable.css';
 import FiltersSection from "./FiltersSection";
 import { ref, set } from 'firebase/database';
 import database from './FirebaseDB';

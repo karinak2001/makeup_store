@@ -1,4 +1,4 @@
-import '../Style/Filters.css'
+import '../Style/Filters.css';
 import {useState} from "react";
 
 function ProductTypeFilter (props) {

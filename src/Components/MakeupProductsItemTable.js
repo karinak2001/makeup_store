@@ -1,4 +1,4 @@
-import '../Style/MakeupProductsItemTable.css'
+import '../Style/MakeupProductsItemTable.css';
 
 function MakeupProductsTable(props) {
 

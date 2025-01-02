@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {get, ref} from 'firebase/database';
 import database from './FirebaseDB';
-import '../Style/ShoppingCart.css'
+import '../Style/ShoppingCart.css';
 
 const ShoppingCart = () => {
     const [dataArray, setDataArray] = useState([]);

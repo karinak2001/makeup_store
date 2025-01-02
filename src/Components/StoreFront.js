@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MakeupProductsTable from "./MakeupProductsTable";
-import '../Style/StoreFront.css'
+import '../Style/StoreFront.css';
 
 function StoreFront() {
 
