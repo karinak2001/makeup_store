@@ -57,7 +57,7 @@
     width: 150px;
     height: 150px;
     object-fit: contain;
-    border: 1px solid #656262;
+    border: 1px solid #ccc;
 }
 
 .name-cart, .price-cart, .brand-cart, .color-cart {
