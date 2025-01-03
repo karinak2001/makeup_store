@@ -117,7 +117,7 @@ function ProductTypeFilter (props) {
                                 </label>
                             </div>
                         </li>
-                        <button type="button" className="btn btn-outline-dark"
+                        <button type="button" className="btn btn-light done-filter-button"
                                 onClick={doneButtonProductTypeFilterHandler}>Done
                         </button>
                     </ul>

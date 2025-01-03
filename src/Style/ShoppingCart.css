@@ -4,9 +4,8 @@
 
 .title-cart {
     text-align: left;
-    font-family: "Trirong", serif;
-    font-weight: bold;
-    font-size: 33px;
+    font-family: "Bebas Neue", serif;
+    font-size: 40px;
 }
 
 .product-container {
@@ -33,20 +32,25 @@
 }
 
 .subtotal-title {
-    font-family: "Trirong", serif;
+    font-family: "Abel", serif;
     font-weight: bold;
     font-size: 23px;
-    padding-left: 15px;
-    padding-top: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .checkout-button {
     position: absolute;
     padding: 10px;
-    top: 90px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: "Trirong", serif;
+}
+
+.shopping-cart-checkout {
+    font-family: "Bebas Neue", serif;
+    font-size: 21px;
+    background-color: #DCDCDC;
 }
 
 .image-cart {
@@ -57,14 +61,10 @@
 }
 
 .name-cart, .price-cart, .brand-cart, .color-cart {
-    font-family: "Trirong", serif;
-    font-size: 15px;
+    font-family: "Abel", serif;
+    font-size: 18px;
 }
 
 .name-cart, .price-cart {
     font-weight: bold;
-}
-
-.btn-light {
-    background-color: #DCDCDC;
 }

@@ -70,10 +70,10 @@ const ShoppingCart = () => {
                                     <div className="color-cart">Color: {item.product_color}</div>
                                     <div className="price-cart">{item.price_sign}{item.price}</div>
                                 </div>
-                                <div class="shadow p-3 mb-5 bg-body-tertiary rounded subtotal-container">
+                                <div className="shadow p-3 mb-5 bg-body-tertiary rounded subtotal-container">
                                     <div className="subtotal-title">SubTotal: {PRICE_SIGN}{subTotal}</div>
                                     <div className="checkout-button">
-                                        <button type="button" className="btn btn-light">CHECKOUT</button>
+                                        <button type="button" className="btn btn-light shopping-cart-checkout">CHECKOUT</button>
                                     </div>
                                 </div>
                             </div>

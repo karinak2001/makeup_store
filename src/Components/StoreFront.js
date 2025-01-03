@@ -68,7 +68,7 @@ function StoreFront() {
                     </div>
                     :
                     <div className="main">
-                        <div className="title">GlowUp</div>
+                        <div className="title">Glow Up</div>
                         <div className="cart-button">
                             <button type="button" className="btn btn-light" onClick={() => navigate('/new')}>
                                 <i className="bi bi-cart-check-fill large-icon"></i></button>

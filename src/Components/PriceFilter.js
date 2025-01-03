@@ -32,7 +32,7 @@ function PriceFilter (props) {
                                 <input className="form-check-input" type="checkbox" value="10"
                                        id="option1" onClick={checkBoxPriceFilterHandler}/>
                                 <label className="form-check-label" htmlFor="option1">
-                                    $0-$10
+                                    $0 - $10
                                 </label>
                             </div>
                         </li>
@@ -41,7 +41,7 @@ function PriceFilter (props) {
                                 <input className="form-check-input" type="checkbox" value="20"
                                        id="option2" onClick={checkBoxPriceFilterHandler}/>
                                 <label className="form-check-label" htmlFor="option2">
-                                    $10-$20
+                                    $10 - $20
                                 </label>
                             </div>
                         </li>
@@ -50,7 +50,7 @@ function PriceFilter (props) {
                                 <input className="form-check-input" type="checkbox" value="30"
                                        id="option3" onClick={checkBoxPriceFilterHandler}/>
                                 <label className="form-check-label" htmlFor="option3">
-                                    $20-$30
+                                    $20 - $30
                                 </label>
                             </div>
                         </li>
@@ -59,7 +59,7 @@ function PriceFilter (props) {
                                 <input className="form-check-input" type="checkbox" value="40"
                                        id="option4" onClick={checkBoxPriceFilterHandler}/>
                                 <label className="form-check-label" htmlFor="option4">
-                                    $30-$40
+                                    $30 - $40
                                 </label>
                             </div>
                         </li>
@@ -68,7 +68,7 @@ function PriceFilter (props) {
                                 <input className="form-check-input" type="checkbox" value="50"
                                        id="option5" onClick={checkBoxPriceFilterHandler}/>
                                 <label className="form-check-label" htmlFor="option5">
-                                    $40-$50
+                                    $40 - $50
                                 </label>
                             </div>
                         </li>
@@ -81,7 +81,7 @@ function PriceFilter (props) {
                                 </label>
                             </div>
                         </li>
-                        <button type="button" className="btn btn-outline-dark" onClick={doneButtonPriceFilterHandler}>Done</button>
+                        <button type="button" className="btn btn-light done-filter-button" onClick={doneButtonPriceFilterHandler}>Done</button>
                     </ul>
                 </div>
             </div>
