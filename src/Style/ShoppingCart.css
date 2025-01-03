@@ -28,7 +28,7 @@
     right: 15px;
     width: 300px;
     height: 150px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     background-color: #e8e9eb;
 }
 
@@ -63,4 +63,8 @@
 
 .name-cart, .price-cart {
     font-weight: bold;
+}
+
+.btn-light {
+    background-color: #DCDCDC;
 }

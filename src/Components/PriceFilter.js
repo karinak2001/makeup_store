@@ -22,7 +22,7 @@ function PriceFilter (props) {
         <div>
             <div className="container mt-5">
                 <div className="price-dropdown">
-                    <button className="btn btn-secondary dropdown-toggle" type="button"
+                    <button className="btn btn-light dropdown-toggle" type="button"
                             id="dropdownMenuButtonPrice" data-bs-toggle="dropdown" aria-expanded="false">
                         Price
                     </button>

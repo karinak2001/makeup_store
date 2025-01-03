@@ -6,6 +6,7 @@ import '../Style/ShoppingCart.css';
 const ShoppingCart = () => {
     const [dataArray, setDataArray] = useState([]);
     const [subTotal, setSubTotal] = useState(0);
+    const PRICE_SIGN = '$';
 
     const subTotalCount = () => {
         const prices = currentPricesArray();
@@ -61,7 +62,7 @@ const ShoppingCart = () => {
                         {dataArray.map((item, index) => (
                             <div className="product-container">
                                 <div className="container_2-cart">
-                                    <img className="image-cart" src={item.image_link} alt={item.name}/>
+                                    <img className="shadow p-3 mb-5 bg-body-tertiary rounded image-cart" src={item.image_link} alt={item.name}/>
                                 </div>
                                 <div className="container_3-cart">
                                     <div className="name-cart">{item.name}</div>
@@ -69,10 +70,10 @@ const ShoppingCart = () => {
                                     <div className="color-cart">Color: {item.product_color}</div>
                                     <div className="price-cart">{item.price_sign}{item.price}</div>
                                 </div>
-                                <div className="subtotal-container">
-                                    <div className="subtotal-title">SubTotal: ${subTotal}</div>
+                                <div class="shadow p-3 mb-5 bg-body-tertiary rounded subtotal-container">
+                                    <div className="subtotal-title">SubTotal: {PRICE_SIGN}{subTotal}</div>
                                     <div className="checkout-button">
-                                        <button type="button" className="btn btn-outline-dark">CHECKOUT</button>
+                                        <button type="button" className="btn btn-light">CHECKOUT</button>
                                     </div>
                                 </div>
                             </div>

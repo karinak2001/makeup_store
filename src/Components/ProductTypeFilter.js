@@ -22,7 +22,7 @@ function ProductTypeFilter (props) {
         <div>
             <div className="container mt-5">
                 <div className="productType-dropdown">
-                    <button className="btn btn-secondary dropdown-toggle" type="button"
+                    <button className="btn btn-light dropdown-toggle" type="button"
                             id="dropdownMenuButtonProductType" data-bs-toggle="dropdown" aria-expanded="false">
                         Product Type
                     </button>
