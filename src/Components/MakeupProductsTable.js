@@ -52,9 +52,12 @@ function MakeupProductsTable (props) {
     };
 
     const randomColorFunction = (colors) => {
-        const colorNames = colors.map((color) => color.colour_name);
-        const randomIndex = Math.floor(Math.random() * colorNames.length);
-        return colorNames[randomIndex];
+        if (colors.length !== 0) {
+            const colorNames = colors.map((color) => color.colour_name);
+            const randomIndex = Math.floor(Math.random() * colorNames.length);
+            return colorNames[randomIndex];
+        }
+        return "";
     };
 
     const addProductToCartHandler = (productName) => {
