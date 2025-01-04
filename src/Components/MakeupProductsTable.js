@@ -69,7 +69,8 @@ function MakeupProductsTable (props) {
             price: newProductInitial.price,
             price_sign: newProductInitial.price_sign,
             image_link: newProductInitial.image_link,
-            product_color: randomColorFunction(newProductInitial.product_colors)
+            product_color: randomColorFunction(newProductInitial.product_colors),
+            Quantity: 0
         };
 
         const uniqueKey = Date.now();
