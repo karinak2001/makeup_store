@@ -115,7 +115,7 @@ const ShoppingCart = () => {
                                         <div className="color-cart">Color: {item.product_color}</div>
                                     }
                                     <div>Qty: {item.quantity} </div>
-                                    <div className="price-cart">{item.price_sign}{item.price}</div>
+                                    <div className="price-cart">{item.price_sign}{item.quantity*item.price}</div>
                                 </div>
                             </div>
                         ))}
