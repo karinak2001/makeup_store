@@ -1,7 +1,9 @@
 .makeup-products-table {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
-    row-gap: 150px;
-    padding-left: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* דואג שהעמודות יתאימו למקום הפנוי */
+    column-gap: calc(10px + 1vw);
+    row-gap: calc(100px + 2vw);
+    width: 100%; /* מונע התרחבות מעבר לגבולות */
+    padding: 0 16px;
+    box-sizing: border-box; /* מבטיח ש-padding לא יגרום לגלילה */
 }
