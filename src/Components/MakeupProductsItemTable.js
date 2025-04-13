@@ -1,6 +1,6 @@
 import '../Style/MakeupProductsItemTable.css';
 
-function MakeupProductsTable(props) {
+function MakeupProductsItemTable(props) {
 
     const handleImageClick = (event) => {
         props.onAddProductToCart(props.name)
@@ -18,4 +18,4 @@ function MakeupProductsTable(props) {
     );
 }
 
-export default MakeupProductsTable;
+export default MakeupProductsItemTable;

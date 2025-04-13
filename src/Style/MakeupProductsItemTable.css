@@ -22,4 +22,5 @@
     height: 280px;
     object-fit: contain;
     border: 1px solid #ccc;
+    cursor: pointer;
 }

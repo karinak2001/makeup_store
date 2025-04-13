@@ -36,7 +36,7 @@ function MakeupProductsTable (props) {
                 const price = parseInt(item);
                 if (price % 10 === 0) {
                     priceFilteredProducts.push(
-                        ...filteredProducts.filter( //השימוש ב-... מאפשר להוסיף את כל האלמנטים מהמיון ישירות כפריטים בודדים למערך.
+                        ...filteredProducts.filter(
                             (product) => parseFloat(product.price) >= price - 10 && parseFloat(product.price) < price
                         )
                     );
