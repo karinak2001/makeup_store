@@ -6,6 +6,7 @@ function MakeupProductsItemTable(props) {
         props.onAddProductToCart(props.name)
     };
 
+
     return (
         <div className="product-items">
             <img className="shadow p-3 mb-5 bg-body-tertiary rounded image" src={props.image_link} onClick={handleImageClick} alt={props.name}/>
